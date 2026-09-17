@@ -1,0 +1,65 @@
+:root {
+  --floor: #0a090c;
+  --nav: #121014;
+  --canvas: #16131a;
+  --panel: #1a1518;
+  --text: #fff6eb;
+  --muted: #b5a090;
+  --dim: #6a5e52;
+  --accent: #ff9a3c;
+  --rule: #2a221c;
+  --edge: #3a2e24;
+  --warm: #221810;
+  --radius-canvas: 18px;
+  --radius-panel: 12px;
+  --radius-chip: 8px;
+  --row-h: 72px;
+  --nav-w: 260px;
+  --title-h: 76px;
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--floor);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent);
+  outline-offset: 2px;
+}
+
+.app-root {
+  min-height: 100%;
+  height: 100%;
+}
